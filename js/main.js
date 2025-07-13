@@ -21,24 +21,50 @@ cancelBtn.addEventListener('click', () => {
 });
 
 // ADD NOT
+
 applyBtn.addEventListener('click', () => {
-  const inputValue = document.getElementById('myInput').value.trim();
-  console.log('apply button');
+  try {
+    const inputValue = document.getElementById('myInput').value.trim();
+    console.log('apply button');
 
-  // seçili priority'yi al
-  const priority = document.querySelector('input[name="priority"]:checked').value;
+    const priority = document.querySelector('input[name="priority"]:checked').value;
 
-  if (inputValue !== '') {
-    todos.push({ text: inputValue, completed: false, priority: priority });
-    document.getElementById('myInput').value = '';
+    if (inputValue !== '') {
+      todos.push({ text: inputValue, completed: false, priority: priority });
+      document.getElementById('myInput').value = '';
 
-    renderNotes();
-    showModal.classList.remove('active');
-    overlay.classList.remove('active');
-  } else {
-    alert('You must write something!');
+      renderNotes();
+      showModal.classList.remove('active');
+      overlay.classList.remove('active');
+    } else {
+      alert('You must write something!');
+    }
+
+  } catch (err) {
+    alert('Beklenmeyen bir hata oluştu. Lütfen tekrar deneyin.');
+    console.error(err);
   }
 });
+
+
+// applyBtn.addEventListener('click', () => {
+//   const inputValue = document.getElementById('myInput').value.trim();
+//   console.log('apply button');
+
+//   // seçili priority'yi al
+//   const priority = document.querySelector('input[name="priority"]:checked').value;
+
+//   if (inputValue !== '') {
+//     todos.push({ text: inputValue, completed: false, priority: priority });
+//     document.getElementById('myInput').value = '';
+
+//     renderNotes();
+//     showModal.classList.remove('active');
+//     overlay.classList.remove('active');
+//   } else {
+//     alert('You must write something!');
+//   }
+// });
 
 // DARK MODE
 function darkMode() {
