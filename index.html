@@ -13,6 +13,7 @@
       referrerpolicy="no-referrer"
     />
     <title>ToDo List</title>
+    <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
     <header>
@@ -20,7 +21,7 @@
     </header>
 
     <section>
-        <form action="#" class="search">
+        <form class="search">
             <input type="text" name="search" placeholder="Search note...">
             <button class="btn-search">
                 <i class="fa-solid fa-magnifying-glass"></i>
@@ -39,7 +40,7 @@
             <ul id="todoList"></ul>
         </div>
         <button class="btn-add">
-            <i class="fa-solid fa-plus"></i>
+            <i><img src="/assets/icons/cross.svg" alt="add-icon"></i>
         </button>
 
         <!-- Popup Modal Box Start -->
@@ -60,5 +61,6 @@
         </div>
         <!-- Popup Modal Box End -->
     </article>
+    <script src="/js/main.js"></script>
 </body>
 </html>
