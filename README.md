@@ -69,8 +69,8 @@ This project aims to create an interactive task list where users can easily add 
 ```
 ## **Tech Stack**
 ✦ **HTML5**      
-✦ **CSS3 (Flexbox, Responsive Tasarım)**    
-✦ **JavaScript (Vanilla JS, DOM Manipülasyonu)**   
+✦ **CSS3**    
+✦ **JavaScript**
 ✦ **Font Awesome (for icons)**   
 <br>
 
