@@ -154,10 +154,6 @@ article {
     width: 100%;
 }
 
-/* .modal-box.active .btn-add {
-    display: none;
-} */
-
 .modal-box.active {
     opacity: 1;
     pointer-events: auto;
@@ -301,6 +297,16 @@ input[type=checkbox]:checked:before {
     background-color: var(--first-color);
 }
 
+.text-container p.checked {
+    color: var(--grey);
+    text-decoration: line-through;
+    text-decoration-color: var(--grey);
+}
+
+.text-container p {
+    transition: color 0.3s ease, text-decoration-color 0.3s ease;
+}
+
 
 input[type=checkbox]:before {
     content: "";
@@ -312,9 +318,9 @@ input[type=checkbox]:before {
     transition: 0.5s;
 }
 
-/* input[type=checkbox]:checked {
+input[type=checkbox]:checked {
     text-decoration: line-through;
-} */
+}
 
 /* Add a "checked" mark when clicked on */
 input[type=checkbox]:checked:after {

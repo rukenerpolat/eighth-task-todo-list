@@ -71,7 +71,8 @@ function renderNotes(list = todos) {
             <div class="text-container">
               <div class="check-box">
                 <input type="checkbox" ${todo.completed ? "checked" : ""} data-index="${index}" />
-                <p>${todo.text}</p>
+              
+                <p class="${todo.completed ? "checked" : ""}">${todo.text}</p>
               </div>
               <div class="input-button">
                 <button class="trash" data-index="${index}"></button>
@@ -97,22 +98,22 @@ function renderNotes(list = todos) {
       checkbox.addEventListener('change', event => {
         const index = event.target.dataset.index;
         todos[index].completed = event.target.checked;
-        filterTodos();
+        filterTodos(); //renderNotes();
       });
     });
   }
 }
 
-// var list = document.querySelector('ul');
-// list.addEventListener(
-//   'click',
-//   function (e) {
-//     if (e.target.tagName === 'P') {
-//       e.target.classList.toggle('checked');
-//     }
-//   },
-//   false
-// );
+var list = document.querySelector('ul');
+list.addEventListener(
+  'click',
+  function (e) {
+    if (e.target.tagName === 'P') {
+      e.target.classList.toggle('checked');
+    }
+  },
+  false
+);
 
 // SEARCH
 searchBtn.addEventListener('click', (e) => {
