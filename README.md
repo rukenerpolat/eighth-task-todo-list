@@ -7,15 +7,19 @@
 🌐 [View Live Page](https://eighth-task-todo-list.netlify.app/) 
 
 </div> 
+
+## ABOUT
  
-# ABOUT
- 
-Before starting the project, I looked through [Figma](https://www.figma.com/community/file/1287029163993360080) examples on Google. I chose a design I liked and wrote down the project requirements based on it. I focused mainly on the JavaScript part, so while the CSS could use some minor improvements, the project is ready for submission as is. This project is a simple and effective web application developed to enable users to manage their tasks in real-time.
+Before starting the project, I looked through [Figma](https://www.figma.com/community/file/1287029163993360080) examples on Google. I chose a design I liked and wrote down the project requirements based on it. 
+> I mainly focused on the JavaScript part, so although the CSS could use a few minor improvements, the project is ready to be submitted as it is.
 
 ## Project Purpose
 
 This project aims to create an interactive task list where users can easily add tasks, mark them as completed, prioritize, and filter them.
 
+<img width="1920" height="868" alt="screencapture-eighth-task-todo-list-netlify-app-2025-07-13-21_19_45" src="https://github.com/user-attachments/assets/0b09256e-82ca-4d6a-947b-5fcaff00b3d4" />
+
+<img width="1920" height="868" alt="screencapture-eighth-task-todo-list-netlify-app-2025-07-13-21_19_57" src="https://github.com/user-attachments/assets/1792514e-71b3-425b-a3c5-d666e724ce5e" />
 
 ## Features
 
@@ -39,12 +43,7 @@ This project aims to create an interactive task list where users can easily add 
 - Dark mode and light mode can be toggled.  
 - Priority order is `Low | Medium | High`.
 
-## **Tech Stack**
-✦ **HTML5**      
-✦ **CSS3 (Flexbox, Responsive Tasarım)**    
-✦ **JavaScript (Vanilla JS, DOM Manipülasyonu)**   
-✦ **Font Awesome (ikonlar için)**   
-
+<img width="1920" height="868" alt="screencapture-eighth-task-todo-list-netlify-app-2025-07-13-21_23_17" src="https://github.com/user-attachments/assets/4dfa4e06-f1c5-4e5e-924d-21e2205169a3" />
 
 ##  **Project Structure**
 
@@ -68,7 +67,11 @@ This project aims to create an interactive task list where users can easily add 
 │
 └── README.md
 ```
-
+## **Tech Stack**
+✦ **HTML5**      
+✦ **CSS3 (Flexbox, Responsive Tasarım)**    
+✦ **JavaScript (Vanilla JS, DOM Manipülasyonu)**   
+✦ **Font Awesome (ikonlar için)**   
 <br>
 
 <b><em>Ruken ERPOLAT </em></b>
