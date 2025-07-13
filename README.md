@@ -48,7 +48,7 @@ This project aims to create an interactive task list where users can easily add 
 ##  **Project Structure**
 
 ```
-📁 
+📁 eighth-task-todo-list
 │
 ├── index.html
 │
@@ -71,7 +71,7 @@ This project aims to create an interactive task list where users can easily add 
 ✦ **HTML5**      
 ✦ **CSS3 (Flexbox, Responsive Tasarım)**    
 ✦ **JavaScript (Vanilla JS, DOM Manipülasyonu)**   
-✦ **Font Awesome (ikonlar için)**   
+✦ **Font Awesome (for icons)**   
 <br>
 
 <b><em>Ruken ERPOLAT </em></b>
