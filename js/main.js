@@ -27,7 +27,14 @@ applyBtn.addEventListener('click', () => {
     const inputValue = document.getElementById('myInput').value.trim();
     console.log('apply button');
 
-    const priority = document.querySelector('input[name="priority"]:checked').value;
+    const priorityRadio = document.querySelector('input[name="priority"]:checked');
+
+    if (!priorityRadio) {
+      alert('Lütfen bir öncelik seçin!');
+      return; // durdur
+    }
+
+    const priority = priorityRadio.value;
 
     if (inputValue !== '') {
       todos.push({ text: inputValue, completed: false, priority: priority });
@@ -45,6 +52,7 @@ applyBtn.addEventListener('click', () => {
     console.error(err);
   }
 });
+
 
 
 // applyBtn.addEventListener('click', () => {
