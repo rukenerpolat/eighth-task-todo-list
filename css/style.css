@@ -9,6 +9,7 @@
     --red: #E50000;
     --grey: #CDCDCD;
     --light-grey: #F0F0F0;
+    --green: #11b984;
 }
 
 * {
@@ -195,7 +196,7 @@ article {
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%) scale(1.2);
-    padding: 30px 20px;
+    padding: 20px;
     z-index: 1;
     display: flex;
     flex-direction: column;
@@ -231,7 +232,7 @@ article {
     align-items: end;
     padding: 10px 15px;
     border-radius: 5px;
-    margin-top: 8rem;
+    margin-top: 7rem;
     cursor: pointer;
 }
 
@@ -249,6 +250,44 @@ article {
 .apply:hover {
     box-shadow: 0px 0px 8px 5px rgba(108, 99, 255, 0.2);
 }
+
+.priority-group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    gap: 1rem;
+}
+
+.priority-group label {
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.priority-group input[type="radio"] {
+    margin-right: 5px;
+}
+
+.priority-label {
+    margin-left: 20px;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    color: #fff;
+}
+
+.priority-label.low {
+    background-color: var(--green);
+}
+
+.priority-label.medium {
+    background-color: var(--light-purple);
+}
+
+.priority-label.high {
+    background-color: var(--red);
+}
+
 
 /* ADD TODO */
 ul {

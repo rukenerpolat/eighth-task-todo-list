@@ -25,8 +25,11 @@ applyBtn.addEventListener('click', () => {
   const inputValue = document.getElementById('myInput').value.trim();
   console.log('apply button');
 
+  // seçili priority'yi al
+  const priority = document.querySelector('input[name="priority"]:checked').value;
+
   if (inputValue !== '') {
-    todos.push({ text: inputValue, completed: false });
+    todos.push({ text: inputValue, completed: false, priority: priority });
     document.getElementById('myInput').value = '';
 
     renderNotes();
@@ -70,9 +73,9 @@ function renderNotes(list = todos) {
           <li data-id="${index}">
             <div class="text-container">
               <div class="check-box">
-                <input type="checkbox" ${todo.completed ? "checked" : ""} data-index="${index}" />
-              
-                <p class="${todo.completed ? "checked" : ""}">${todo.text}</p>
+              <input type="checkbox" ${todo.completed ? "checked" : ""} data-index="${index}" />              
+              <p class="${todo.completed ? "checked" : ""}">${todo.text}</p>
+              <span class="priority-label ${todo.priority.toLowerCase()}">${todo.priority}</span>
               </div>
               <div class="input-button">
                 <button class="trash" data-index="${index}"></button>
