@@ -68,10 +68,10 @@ This project aims to create an interactive task list where users can easily add 
 └── README.md
 ```
 ## **Tech Stack**
-✦ **HTML5**      
-✦ **CSS3**    
-✦ **JavaScript**
-✦ **Font Awesome (for icons)**   
+✦ **HTML5**       
+✦ **CSS3**     
+✦ **JavaScript**    
+✦ **Font Awesome (for icons)**     
 <br>
 
 <b><em>Ruken ERPOLAT </em></b>
